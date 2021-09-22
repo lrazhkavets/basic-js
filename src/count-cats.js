@@ -14,7 +14,9 @@ import { NotImplementedError } from '../extensions/index.js';
  * ]) => 3`
  *
  */
-export default function countCats(/* matrix */) {
-  throw new NotImplementedError('Not implemented');
+export default function countCats( matrix ) {
+  //throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
+  let arr = matrix.flat(Infinity).filter(el => el == '^^')
+  return arr.length;
 }
